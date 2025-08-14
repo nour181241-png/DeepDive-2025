@@ -1,66 +1,62 @@
-const student_name = "Nourhan Hassan";
-console.log(student_name);
+//1
 
-let student_age = "21";
-console.log(student_age);
+const name="Nour";
+let age=20;
+var enrollment=true;
 
-var is_Enolled = "true";
-console.log(is_Enolled);
 
-let grades_subjects =[15, 19, 20];
-console.log(grades_subjects[2]);
+//2 
+let grades=[90,80,70];
+let total = grades[0] + grades[1] + grades[2];
+let average=total/3;
+console.log("Total Grades: ", total); // Total Grades: 240
+console.log("average: ",average);
 
-// ---------------------------------------------------//
 
-let total_grades = grades_subjects[0] + grades_subjects[1] + grades_subjects[2];
-console.log(total_grades);
 
-let average = total_grades/grades_subjects.length;
-console.log(average);
 
-// ------------------------------------------------------//
-
-let averag = 18;
-if (averag >= 25)
-{
+//3
+let grade = Number(prompt("Enter your grade:"));
+if (grade >= 90) {
     console.log("Excellent");
-}
-else if (averag >=15 ) 
-{
-    console.log("Very Good");
-}
-else if (averag >= 10)
-{
-    console.log("Good");
-}
-else {
-    console.log("failed");
+} else if (grade >= 75) {
+    console.log("Very good");
+} else if ( grade >= 60) {
+    console.log("Passed");
+} else {
+    console.log("Failed");
 }
 
-// --------------------------------------------------------------//
 
-let subject_number = 2;
-let grade = 20;
-switch (subject_number)
-{
+
+
+//4
+let subjectNumber = Number(prompt("Enter subject number (1, 2, or 3):"));
+
+switch (subjectNumber) {
     case 1:
-        console.log("Math: " + grade[0]);
+        console.log("Math: " + grades[0]);
         break;
     case 2:
-        console.log("English: " + grade[1]);
+        console.log("Science: " + grades[1]);
         break;
     case 3:
-        console.log("Scince: " + grade[2]);
+        console.log("English: " + grades[2]);
         break;
     default:
-        console.log("Invalid subject number")
-
+        console.log("Invalid subject number. Please enter 1, 2, or 3.");
 }
-// ------------------------------------------------//
+
+
+
+
+
 //5
 for (let i = 0; i < grades.length; i++) {
     console.log("Grade " + (i + 1) + ": " + grades[i]);
 }
+
+
 
 
 //6
@@ -84,6 +80,9 @@ console.log("Total Grades:", totalGrades);     // Total Grades: 240
 console.log("Average Grades:", averageGrades);
 
 
+
+
+
 // 7, 8
 let num = 10;
 
@@ -93,6 +92,8 @@ while (num < 10) {
 do {
     console.log("done");
 } while (num < 10);
+
+
 
 
 // 9
